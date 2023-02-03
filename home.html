@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Stock Prediction App</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <h1>Stock Prediction App</h1>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <form action="{{url_for('result')}}" method="post">
+                    <h2>Select Stock for Prediction:</h2>
+                    <select name="selected_stock">
+                        <option value="AAPL">Apple Inc. (AAPL)</option>
+                        <option value="MSFT">Microsoft Corporation (MSFT)</option>
+                        <option value="TWTR">Twitter, Inc. (TWTR)</option>
+                        <option value="TSLA">Tesla, Inc. (TSLA)</option>
+                        <option value="GOOG">Alphabet Inc. (GOOG)</option>
+                        <option value="META">Meta Platforms, Inc. (META)</option>
+                    </select>
+                    <h2>Years of Prediction:</h2>
+                    <input type="range" min="1" max="5" value="1" name="n_years">
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form>
+                <div class="container">
+                    <h2>Highest Stock Name: {{highest_stock_name}}</h2>
+                    <h2>Highest Price: {{highest_price}}</h2>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Stock Prediction App</p>
+        </footer>
+    </body>
+</html>

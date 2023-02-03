@@ -1,0 +1,102 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+form select, form input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.result {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.result h2 {
+    margin-bottom: 50px;
+}
+
+.result img {
+    width: 100%;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
